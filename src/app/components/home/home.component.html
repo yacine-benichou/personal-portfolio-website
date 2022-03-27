@@ -1,0 +1,23 @@
+<div class="container">
+    <app-theme [themeState] = "isDarkThemeOn" (themeEvent) = "isDarkThemeOn = $event"></app-theme>
+    <main>
+        <div class="main-content">
+            <div class="left-content">
+                <div class="h-shape"></div>
+                <div class="image-section">
+                    <img src="../../../assets/images/photo-étudiant.png" alt="image of myslelf" />
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="presentation-section">
+                    <h1>Bonjour, Je m'appelle Yacine BENICHOU. Un développeur web</h1>
+                    <p>Je suis un développeur web qui aime créer des applications et des sites web</p>
+                </div>
+            </div>
+            <div class="nav-content">
+                <app-navigation></app-navigation>
+            </div>
+        </div>
+    </main>
+    
+</div>
