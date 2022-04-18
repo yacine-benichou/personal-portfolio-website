@@ -2,7 +2,6 @@
 @import "./app/shared/variables";
 @import '~bootstrap/scss/bootstrap';
 
-
 body {
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -35,4 +34,3 @@ button {
         pointer-events: none;
     }
 }
-

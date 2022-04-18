@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,13 +25,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       {path: "", redirectTo: "/home", pathMatch: "full"},
-      {path: "home", component: HomeComponent},
-      {path: "about_me", component: AboutComponent},
+      {path: "home", component: HomeComponent, data: { animation: 'HomePage' }},
+      {path: "about_me", component: AboutComponent, data: { animation: 'AboutPage' }},
       {path: "projects", component: ProjectsComponent},
       {path: "contact_me", component: ContactComponent},
-    ]),
+    ], {scrollPositionRestoration: 'enabled'}),
     FontAwesomeModule,
     NgbModule
   ],

@@ -1,8 +1,8 @@
 <nav class="nav-container">
     <ul class="nav-list">
-        <li class="control active-btn" [routerLink]="['/']" routerLinkActive="router-link-active"><a class="button-home"><fa-icon [icon] = "homeIcon"></fa-icon></a></li>
-        <li class="control" [routerLink]="['/about_me']" routerLinkActive="router-link-active"><a class="button-about"><fa-icon [icon] = "userIcon"></fa-icon></a></li>
-        <li class="control" [routerLink]="['/projects']" routerLinkActive="router-link-active"><a class="button-project"><fa-icon [icon] = "briefcaseIcon"></fa-icon></a></li>
-        <li class="control" [routerLink]="['/contact_me']" routerLinkActive="router-link-active"><a class="button-contact"><fa-icon [icon] = "enveloppeIcon"></fa-icon></a></li>
+        <li class="control" [routerLink]="['/home']" routerLinkActive="active-btn"><a class="button-home"><fa-icon [icon] = "homeIcon"></fa-icon></a></li>
+        <li class="control" [routerLink]="['/about_me']" [state]="{ id:1 , themeState: isDarkThemeOn }" routerLinkActive="active-btn"><a class="button-about"><fa-icon [icon] = "userIcon"></fa-icon></a></li>
+        <li class="control" [routerLink]="['/projects']" routerLinkActive="active-btn"><a class="button-project"><fa-icon [icon] = "briefcaseIcon"></fa-icon></a></li>
+        <li class="control" [routerLink]="['/contact_me']" routerLinkActive="active-btn"><a class="button-contact"><fa-icon [icon] = "enveloppeIcon"></fa-icon></a></li>
     </ul>
 </nav>

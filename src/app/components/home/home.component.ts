@@ -1,4 +1,6 @@
 import { ChangeDetectorRef, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faderAnimation } from 'src/app/animations';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +10,7 @@ import { ChangeDetectorRef, Component, OnChanges, OnInit, SimpleChanges } from '
 export class HomeComponent implements OnInit {
 
   public isDarkThemeOn = true;
+  public downloadIcon = faDownload;
 
   constructor() { }
 
