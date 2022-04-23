@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { faHome, faUser, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faBriefcase, faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navigation',
@@ -8,10 +8,10 @@ import { faHome, faUser, faBriefcase, faEnvelope } from '@fortawesome/free-solid
 })
 export class NavigationComponent implements OnInit {
 
-  public homeIcon = faHome;
-  public userIcon = faUser;
-  public briefcaseIcon = faBriefcase;
-  public enveloppeIcon = faEnvelope;
+  public homeIcon: IconDefinition = faHome;
+  public userIcon: IconDefinition = faUser;
+  public briefcaseIcon: IconDefinition = faBriefcase;
+  public enveloppeIcon: IconDefinition = faEnvelope;
   
   @Input() isDarkThemeOn: boolean = true;
 

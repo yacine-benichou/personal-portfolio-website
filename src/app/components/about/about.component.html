@@ -1,5 +1,114 @@
 <div class="container">
     <app-theme [themeState] = "isDarkThemeOn" (themeEvent) = "isDarkThemeOn = $event"></app-theme>
+    <header>
+        <div class="main-title">
+            <h1 class="title">À PROPOS DE <span>MOI</span></h1>
+        </div>
+    </header>
+    <main>
+        <div class="about-container">
+            <div class="left-about">
+                <div class="left-about-text">
+                    <h4>Quelques informations à mon sujet !</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
+                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br/><br/> La musica
+                        delectus dolore fugiat exercitationem a, 
+                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Harum non necessitatibus deleniti eum soluta.
+                    </p>
+                </div>
+                <!-- TODO : Use reusable component instead -->
+                <div class="button-container">
+                    <a href="#" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><fa-icon [icon] = "downloadIcon"></fa-icon></span>
+                    </a>
+                </div>
+            </div>
+            <div class="right-about">
+                <!-- TODO : Use Ngfor instead -->
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">10+</p>
+                        <p class="small-text">Projects <br /> Completed</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <div class="abt-text">
+                        <p class="large-text">2+</p>
+                        <p class="small-text">Years of <br /> experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-skills">
+            <h3 class="skills-title">Mes compétences</h3>
+            <h5 class="languages-title">Mes langages de programmation</h5>
+            <div class="skills-languages">
+                <div class="language">
+                    <p class="language-title">HTML5</p>
+                </div>
+                <div class="language">
+                    <p class="language-title">CSS3 / SCSS</p>
+                </div>
+                <div class="language">
+                    <p class="language-title">JavaScript / TypeScript</p>
+                </div>
+                <div class="language">
+                    <p class="language-title">Python</p>
+                </div>
+                <div class="language">
+                    <p class="language-title">Java</p>
+                </div>
+                <div class="language">
+                    <p class="language-title">Kotlin</p>
+                </div>
+            </div>
+            <h5 class="frameworks-title">Mes frameworks / Mes outils</h5>
+            <div class="skills-frameworks">
+                
+                <div class="framework">
+                    <img src="../../../assets/images/angular-logo.png" alt="Angular" />
+                    <p class="framework-title">Angular</p>
+                </div>
+                <div class="framework">
+                    <img src="../../../assets/images/react-logo.png" alt="React">
+                    <p class="framework-title">React</p>
+                </div>
+                <div class="framework">
+                    <img src="../../../assets/images/spring-logo.png" alt="Spring">
+                    <p class="framework-title">Spring</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="timelines-title">Ma Formation</h3>
+        <div class="about-timeline">
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <fa-icon [icon]="briefcaseIcon"></fa-icon>
+                </div>
+                <p class="tl-duration">Juillet 2021 - Janvier 2022</p>
+                <h5>Développeur Full Stack<span> - Société générale</span></h5>
+                <p>
+                    Développement application interne à l'entreprise avec Angular et Spring java.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <fa-icon [icon]="briefcaseIcon"></fa-icon>
+                </div>
+                <p class="tl-duration">2020 - present</p>
+                <h5>Diplôme d'ingénieur en ingénierie et numérique<span> - EPF École d'ingénieur-e-s</span></h5>
+                <p>
+                    Actuellement en 4ème année.
+                </p>
+            </div>
+            
+        </div>
+    </main> 
     <div class="nav-content">
         <app-navigation></app-navigation>
     </div>

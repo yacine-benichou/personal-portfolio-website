@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ChildrenOutletContexts, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
-import { faderAnimation, stepper } from './animations';
+import { faderAnimation, slideInAnimation, stepper } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    faderAnimation
+    slideInAnimation
   ]
 })
 export class AppComponent {
   title = 'portfolio-website';
   faSun = faSun;
 
-  constructor(private contexts: ChildrenOutletContexts, private router: Router) {}
+  constructor() {}
 
   getRouteForAnimationData(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData["animation"]

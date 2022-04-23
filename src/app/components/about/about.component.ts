@@ -1,5 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { faBriefcase, faDownload, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -10,6 +11,8 @@ export class AboutComponent implements OnInit {
 
   public isDarkThemeOn: boolean = true;
   public themeStateObject: any;
+  public downloadIcon: IconDefinition = faDownload;
+  public briefcaseIcon: IconDefinition = faBriefcase;
 
 
   constructor(private location: Location) { }
@@ -17,7 +20,6 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.themeStateObject = this.location.getState();
     this.isDarkThemeOn = this.themeStateObject.themeState;
-    console.log(this.themeStateObject)
   }
 
 }
