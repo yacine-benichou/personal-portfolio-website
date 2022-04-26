@@ -12,8 +12,8 @@ export class ProjectsComponent implements OnInit {
 
   public isDarkThemeOn: boolean = true;
   public themeStateObject: any;
-  public faGithub: IconDefinition = faGithub;
-  public faCodePen: IconDefinition = faCodepen;
+  public githubIcon: IconDefinition = faGithub;
+  public codePenIcon: IconDefinition = faCodepen;
 
   constructor(private location: Location) { }
 

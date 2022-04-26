@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DownloadButtonComponent } from './components/download-button/download-button.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
+    DownloadButtonComponent,
   ],
   imports: [
     BrowserModule,

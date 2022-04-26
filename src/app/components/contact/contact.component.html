@@ -1,1 +1,93 @@
-<p>contact works!</p>
+<div class="container">
+    <app-theme [themeState] = "isDarkThemeOn" (themeEvent) = "isDarkThemeOn = $event"></app-theme>
+
+    <header>
+        <div class="main-title">
+            <h2>CONTACTEZ <span>MOI</span></h2>
+        </div>
+    </header>
+    <div class="contact-container">
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>CONTACTEZ MOI ICI</h4>
+                <p>
+                    Vous avez besoin que je participe à un de vos projets ? Contactez moi ici en remplissant le formulaire sur la droite. Au plaisir de collaborer avec vous !
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <fa-icon [icon] = "locationIcon"></fa-icon>
+                            <span>Lieu</span>
+                        </div>
+                        <p>
+                            : Paris, France
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <fa-icon [icon] = "envelopeIcon"></fa-icon>
+                            <span>Email</span>
+                        </div>
+                        <p>
+                            <span>: yacine.benichou@epfedu.fr</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <fa-icon [icon] = "userGraduateIcon"></fa-icon>
+                            <span>Education</span>
+                        </div>
+                        <p>
+                            <span>: EPF École d'ingénieur-e-s, Cachan</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <fa-icon [icon] = "languageIcon"></fa-icon>
+                            <span>Languages</span>
+                        </div>
+                        <p>
+                            <span>: Français, Anglais</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="https://github.com/yacine-benichou/" target="_blank">
+                            <fa-icon [icon] = "githubIcon"></fa-icon>
+                        </a>
+                        <a href="https://codepen.io/yacine-epf" target="_blank">
+                            <fa-icon [icon] = "codePenIcon"></fa-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yacine-benichou/" target="_blank">
+                            <fa-icon [icon] = "linkedinIcon"></fa-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-contact">
+                <form class="contact-form">
+                    <div class="input-control i-c-2">
+                        <input type="text" required placeholder="VOTRE NOM COMPLET">
+                        <input type="email" required placeholder="VOTRE EMAIL">
+                    </div>
+                    <div class="input-control">
+                        <input type="text" required placeholder="ENTREZ VOTRE SUJET">
+                    </div>
+                    <div class="input-control">
+                        <textarea name="" id="" cols="15" rows="8" placeholder="Écrivez votre message ici"></textarea>
+                    </div>
+                    <div class="button-container">
+                        <app-download-button></app-download-button>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Envoyez votre message</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="nav-content">
+        <app-navigation [isDarkThemeOn] = "isDarkThemeOn"></app-navigation>
+    </div>
+</div>
