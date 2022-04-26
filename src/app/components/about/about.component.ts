@@ -1,4 +1,3 @@
-import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { faBriefcase, faDownload, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
@@ -28,8 +27,6 @@ interface Framework {
 
 export class AboutComponent implements OnInit {
 
-  public isDarkThemeOn: boolean = true;
-  public themeStateObject: any;
   public downloadIcon: IconDefinition = faDownload;
   public briefcaseIcon: IconDefinition = faBriefcase;
 
@@ -48,24 +45,31 @@ export class AboutComponent implements OnInit {
   ];
 
   public timelines: Timeline[] = [
-    {duration: "Juillet 2021 - Janvier 2022", job: "Développeur Full Stack", 
-    company: "Société générale", description: "Développement application interne à l'entreprise avec Angular et Spring java."},
-    {duration: "2020 - present", job: "Diplôme d'ingénieur en ingénierie et numérique", 
-    company: "EPF École d'ingénieur-e-s", description: "Actuellement en 4ème année."},
+    {
+      duration: "Juillet 2021 - Janvier 2022", 
+      job: "Développeur Full Stack", 
+      company: "Société générale", 
+      description: "Développement application interne à l'entreprise avec Angular et Spring java."
+    },
+    {
+      duration: "2020 - present", 
+      job: "Diplôme d'ingénieur en ingénierie et numérique", 
+      company: "EPF École d'ingénieur-e-s", 
+      description: "Actuellement en 4ème année."
+    },
   ];
 
   public frameworks: Framework[] = [
     {src: "../../../assets/images/angular-logo.png", framework: "Angular"},
     {src: "../../../assets/images/react-logo.png", framework: "React"},
     {src: "../../../assets/images/spring-logo.png", framework: "Spring"},
-  ]
+  ];
 
 
-  constructor(private location: Location) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.themeStateObject = this.location.getState();
-    this.isDarkThemeOn = this.themeStateObject.themeState;
+
   }
 
 }

@@ -1,4 +1,3 @@
-import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faCodepen, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -11,8 +10,6 @@ import { faDownload, faEnvelope, faGlobeAfrica, faMapMarkerAlt, faUserGraduate }
 })
 export class ContactComponent implements OnInit {
   
-  public isDarkThemeOn: boolean = true;
-  public themeStateObject: any;
   public downloadIcon: IconDefinition = faDownload;
   public locationIcon: IconDefinition = faMapMarkerAlt;
   public envelopeIcon: IconDefinition = faEnvelope;
@@ -22,11 +19,10 @@ export class ContactComponent implements OnInit {
   public codePenIcon: IconDefinition = faCodepen;
   public linkedinIcon: IconDefinition = faLinkedin;
 
-  constructor(private location: Location) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.themeStateObject = this.location.getState();
-    this.isDarkThemeOn = this.themeStateObject.themeState;
+
   }
 
 }

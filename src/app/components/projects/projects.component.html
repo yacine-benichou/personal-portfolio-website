@@ -8,93 +8,18 @@
     </header>
     <main>
         <div class="portfolios">
-            <div class="portfolio-item">
+            <div *ngFor="let project of projects"  class="portfolio-item">
                 <div class="image">
-                    <img src="../../../assets/images/port1.jpg" alt="hand typing on keyboard">
+                    <img src="{{ project.src }}" alt="{{ project.imgDescription }}">
                 </div>
                 <div class="hover-items">
-                    <h3>JavaScript Calculator (React)</h3>
+                    <h3>{{ project.title }}</h3>
                     <div class="icons">
-                        <a href="https://github.com/yacine-benichou/Javascript-calculator-FCC" class="icon" target="_blank">
+                        <a *ngIf="project.githubLink" href="{{ project.githubLink }}" class="icon" target="_blank">
                             <fa-icon [icon] = "githubIcon"></fa-icon>
                         </a>
-                        <a href="https://codepen.io/yacine-epf/pen/WNOWmKv" class="icon" target="_blank">
+                        <a *ngIf="project.codePenLink" href="{{ project.codePenLink }}" class="icon" target="_blank">
                             <fa-icon [icon] = "codePenIcon"></fa-icon>
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="../../../assets/images/port2.jpg" alt="Mac screen with rose light">
-                </div>
-                <div class="hover-items">
-                    <h3>Drum Machine (React)</h3>
-                    <div class="icons">
-                        <a href="https://github.com/yacine-benichou/drum-machine-fcc" class="icon" target="_blank">
-                            <fa-icon [icon] = "githubIcon"></fa-icon>
-                        </a>
-                        <a href="https://codepen.io/yacine-epf/pen/KKqMPRW" class="icon" target="_blank">
-                            <fa-icon [icon] = "codePenIcon"></fa-icon>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="../../../assets/images/port3.jpg" alt="Double screen with blue light">
-                </div>
-                <div class="hover-items">
-                    <h3>25:5 clock (React)</h3>
-                    <div class="icons">
-                        <a href="https://github.com/yacine-benichou/25-5-clock-fcc" class="icon" target="_blank">
-                            <fa-icon [icon] = "githubIcon"></fa-icon>
-                        </a>
-                        <a href="https://codepen.io/yacine-epf/pen/gOxyGYQ" class="icon" target="_blank">
-                            <fa-icon [icon] = "codePenIcon"></fa-icon>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="../../../assets/images/port4.jpg" alt="Laptop viewed from the side">
-                </div>
-                <div class="hover-items">
-                    <h3>Data Visualization of US GDP (D3.js)</h3>
-                    <div class="icons">
-                        <a href="https://codepen.io/yacine-epf/pen/BamNBLr" class="icon" target="_blank">
-                            <fa-icon [icon] = "codePenIcon"></fa-icon>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="../../../assets/images/port5.jpg" alt="Macbook with Ipad viewed from the side">
-                </div>
-                <div class="hover-items">
-                    <h3>Random Quote Machine (HTML/CSS/JS/Bootstrap)</h3>
-                    <div class="icons">
-                        <a href="https://github.com/yacine-benichou/Random-Quote-Machine" class="icon" target="_blank">
-                            <fa-icon [icon] = "githubIcon"></fa-icon>
-                        </a>
-                        <a href="https://codepen.io/yacine-epf/pen/abBqLMo" class="icon" target="_blank">
-                            <fa-icon [icon] = "codePenIcon"></fa-icon>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="../../../assets/images/port6.jpg" alt="Coding setup with big screen and laptop on the right">
-                </div>
-                <div class="hover-items">
-                    <h3>Android Client Form (Kotlin)</h3>
-                    <div class="icons">
-                        <a href="https://github.com/yacine-benichou/android-client-form" class="icon" target="_blank">
-                            <fa-icon [icon] = "githubIcon"></fa-icon>
                         </a>
                     </div>
                 </div>
@@ -102,6 +27,6 @@
         </div>
     </main>
     <div class="nav-content">
-        <app-navigation [isDarkThemeOn] = "isDarkThemeOn"></app-navigation>
+        <app-navigation></app-navigation>
     </div>
 </div>

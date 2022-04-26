@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faHome, faUser, faBriefcase, faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -13,8 +13,6 @@ export class NavigationComponent implements OnInit {
   public briefcaseIcon: IconDefinition = faBriefcase;
   public enveloppeIcon: IconDefinition = faEnvelope;
   
-  @Input() isDarkThemeOn: boolean = true;
-
   constructor() { }
 
   ngOnInit(): void {
