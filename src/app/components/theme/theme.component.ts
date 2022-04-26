@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faSun, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { ThemeService } from 'src/app/service/theme.service';
 
 @Component({
   selector: 'app-theme',
@@ -9,21 +10,18 @@ import { faMoon } from '@fortawesome/free-regular-svg-icons';
 })
 export class ThemeComponent implements OnInit {
 
-  @Input() themeState: boolean | undefined;
-  @Output() themeEvent: EventEmitter<boolean> = new EventEmitter();
+  public isDarkThemeOn: boolean | undefined;
 
   public themeIcon: IconDefinition = faMoon;
-  constructor() { }
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
-    this.themeIcon = document.body.classList.contains('light-mode') ? faSun : faMoon;
+    this.isDarkThemeOn = this.themeService.getThemeState();
+    this.themeIcon = this.isDarkThemeOn ? faMoon : faSun;
   }
 
   changeTheme(): void {
-    this.themeIcon = this.themeIcon === faMoon ? faSun : faMoon;
-    this.themeState = this.themeIcon === faSun ? false : true;
-    document.body.classList.toggle('light-mode');
-    this.themeEvent.emit(this.themeState);
+    this.isDarkThemeOn = this.themeService.changeTheme();
+    this.themeIcon = this.isDarkThemeOn ? faMoon : faSun;
   }
-
 }
