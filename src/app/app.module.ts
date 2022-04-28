@@ -13,6 +13,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DownloadButtonComponent } from './components/download-button/download-button.component';
+import { TranslationButtonComponent } from './components/translation-button/translation-button.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DownloadButtonComponent } from './components/download-button/download-b
     ProjectsComponent,
     ContactComponent,
     DownloadButtonComponent,
+    TranslationButtonComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons';
-
-interface Project {
-  src: string,
-  imgDescription: string,
-  title: string,
-  githubLink?: string,
-  codePenLink?: string,
-}
+import { Project } from 'src/app/interfaces/project';
 
 @Component({
   selector: 'app-projects',

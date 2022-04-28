@@ -1,22 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faBriefcase, faDownload, IconDefinition } from '@fortawesome/free-solid-svg-icons';
-
-interface PortfolioItem {
-  largeText: string,
-  smallText: string
-}
-
-interface Timeline {
-  duration: string,
-  job: string,
-  company: string,
-  description: string,
-}
-
-interface Framework {
-  src: string,
-  framework: string,
-}
+import { Framework, PortfolioItem, Timeline } from 'src/app/interfaces/about';
 
 @Component({
   selector: 'app-about',

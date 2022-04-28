@@ -11,8 +11,8 @@ import { ThemeService } from 'src/app/service/theme.service';
 export class ThemeComponent implements OnInit {
 
   public isDarkThemeOn: boolean | undefined;
-
   public themeIcon: IconDefinition = faMoon;
+  
   constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {

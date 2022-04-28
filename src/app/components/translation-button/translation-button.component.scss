@@ -1,0 +1,16 @@
+.btn-language-container {
+    display: flex;
+    align-self: flex-start;
+
+    .fr-btn, .en-btn {
+        margin: 1rem 0;
+        color: inherit;
+        font-weight: 600;
+        border: 1px solid var(--color-secondary);
+        background-color: var(--color-primary);
+    }
+
+    .active {
+        background-color: var(--color-secondary);
+    }
+}
