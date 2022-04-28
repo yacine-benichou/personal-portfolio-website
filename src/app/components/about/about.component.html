@@ -1,20 +1,19 @@
 <div class="container">
+    <app-translation-button></app-translation-button>
     <app-theme></app-theme>
     <header>
         <div class="main-title">
-            <h1 class="title">À PROPOS DE <span>MOI</span></h1>
+            <h1 class="title">{{ 'about.about_me' | translate }}<span>{{ 'common.me' | translate }}</span></h1>
         </div>
     </header>
     <main>
         <div class="about-container">
             <div class="left-about">
                 <div class="left-about-text">
-                    <h4>Quelques informations à mon sujet !</h4>
+                    <h4>{{ 'about.information_title' | translate}}</h4>
                     <p>
-                        Je suis un développeur full Stack jeune qui peut apporter du nouveau dans un projet qui m'ait donné.
-                        J'ai de l'expérience notamment dans le développement d'interface avec les dernières technologies.<br/><br/> 
-                        Je suis passionné par les nouvelles technologies et l'innovation. J'aime également jouer aux jeux vidéos dans mon temps libre 
-                        mais également voyager pour étendre mes horizons !
+                        {{ 'about.information_description.me' | translate }}<br/><br/> 
+                        {{ 'about.information_description.hobbies' | translate }}
                     </p>
                 </div>
                 <app-download-button></app-download-button>
@@ -24,22 +23,22 @@
                 <div *ngFor="let item of portfolioItems" class="about-item">
                     <div class="abt-text">
                         <p class="large-text">{{ item.largeText }}</p>
-                        <p class="small-text">{{ item.smallText }}</p>
+                        <p class="small-text">{{ item.smallText | translate }}</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="about-skills">
-            <h3 class="skills-title">Mes compétences</h3>
-            <h5 class="languages-title">Mes langages de programmation</h5>
+            <h3 class="skills-title">{{ 'about.skills' | translate }}</h3>
+            <h5 class="languages-title">{{ 'about.programming_language' | translate }}</h5>
             <div class="skills-languages">
                 <div *ngFor="let language of languages" class="language">
                     <p class="language-title">{{ language }}</p>
                 </div>
             </div>
 
-            <h5 class="frameworks-title">Mes frameworks / Mes outils</h5>
+            <h5 class="frameworks-title">{{ 'about.framework' | translate }}</h5>
             <div class="skills-frameworks">
                 <div *ngFor="let framework of frameworks" class="framework">
                     <img src="{{ framework.src }}" alt="{{ framework.framework }}" />
@@ -48,16 +47,16 @@
             </div>
         </div>
 
-        <h3 class="timelines-title">Ma Formation</h3>
+        <h3 class="timelines-title">{{ 'about.timeline.title' | translate }}</h3>
         <div class="about-timeline">
             <div *ngFor="let timelineItem of timelines" class="timeline-item">
                 <div class="tl-icon">
                     <fa-icon [icon]="briefcaseIcon"></fa-icon>
                 </div>
-                <p class="tl-duration">{{ timelineItem.duration }}</p>
-                <h5>{{ timelineItem.job }}<span> - {{ timelineItem.company }}</span></h5>
+                <p class="tl-duration">{{ timelineItem.duration | translate}}</p>
+                <h5>{{ timelineItem.job | translate }}<span> - {{ timelineItem.company | translate }}</span></h5>
                 <p>
-                    {{ timelineItem.description }}
+                    {{ timelineItem.description | translate }}
                 </p>
             </div>
         </div>

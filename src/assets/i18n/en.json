@@ -1,0 +1,77 @@
+{
+    "common": {
+        "download": "Download CV",
+        "me": "ME"
+    },
+    "home": {
+        "welcome": "Hello my name is ",
+        "fullName": "Yacine BENICHOU",
+        "presentation": "I'm a web developper who likes to create applications and websites"
+    },
+    "about": {
+        "about_me": "ABOUT ",
+        "information_title": "Some things to know about me !",
+        "information_description": {
+            "me": "I am a young full stack developer who can bring something new to your project(s). I have experience in developing UIs with the latest technologies.",
+            "hobbies": "I am passionate about new technologies and innovation. I also like to play video games in my free time but also travel to expand my horizons!"
+        },
+        "small_text_project": "Projects completed",
+        "small_text_experience": "Years of experience",
+        "skills": "My skills",
+        "programming_language": "My programming languages",
+        "framework": "My frameworks",
+        "timeline": {
+            "title": "My timeline",
+            "duration_internship": "July 2021 - January 2022",
+            "job_internship": "Full Stack Developer",
+            "description_internship": "Design and development of new features and services for the management tool of technical and software deprecation – cost optimization with Angular and Spring.",
+            "name_school": "EPF Engineering School",
+            "duration_school": "2020 - Now",
+            "degree_school": "Computer Science degree",
+            "description_school": "Currently in my 4th year"
+        }
+    },
+    "project": {
+        "me": "MY ",
+        "portfolio": "PORTFOLIO",
+        "header_description": "Here are some projects that I did.",
+        "img": {
+            "img_description_1": "hand typing on keyboard",
+            "img_description_2": "Mac screen with pink light",
+            "img_description_3": "Double screen with blue light",
+            "img_description_4": "Laptop viewed from the side",
+            "img_description_5": "Macbook with Ipad viewed from the side",
+            "img_description_6": "Coding setup with big screen and laptop on the right"
+        },
+        "project_title": {
+            "title_1": "JavaScript Calculator (React)",
+            "title_2": "Drum Machine (React)",
+            "title_3": "25:5 clock (React)",
+            "title_4": "Data Visualization of US GDP (D3.js)",
+            "title_5": "Random Quote Machine (HTML/CSS/JS/Bootstrap)",
+            "title_6": "Android Client Form (Kotlin)"
+        }
+    },
+    "contact": {
+        "title": "CONTACT ",
+        "contact_me": "CONTACT ME HERE",
+        "description": "You need me to participate in one of your projects ? Contact me here by filling out the form on the right. I look forward to working with you !",
+        "type": {
+            "location": "Location",
+            "email": "Email",
+            "education": "Education",
+            "language": "Languages"
+        },
+        "data": {
+            "data_location": "Paris, France",
+            "data_email": "yacine.benichou@epfedu.fr",
+            "data_education": "EPF Engineering School, Cachan",
+            "data_language": "English, French"
+        },
+        "name_input_placeholder": "YOUR NAME",
+        "email_input_placeholder": "YOUR EMAIL",
+        "subject_input_placeholder": "ENTER SUBJECT",
+        "textarea_placeholder": "Message Here...",
+        "send_button": "Send message"
+    }
+}

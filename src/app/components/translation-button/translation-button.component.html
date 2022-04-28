@@ -1,4 +1,4 @@
 <div class="btn-language-container">
-    <button type="button" class="fr-btn" [ngClass]="{active: isLanguageFrench}">FR</button>
-    <button type="button" class="en-btn" [ngClass]="{active: !isLanguageFrench}">EN</button>
+    <button type="button" (click)="setLanguageToFrench()" class="fr-btn" [ngClass]="{active: isLanguageFrench}">FR</button>
+    <button type="button" (click)="setLanguageToEnglish()" class="en-btn" [ngClass]="{active: !isLanguageFrench}">EN</button>
 </div>

@@ -12,10 +12,10 @@
                 <div class="presentation-section">
                     <div class="presentation-text-container">
                         <h1 class="name">
-                            Bonjour, Je m'appelle <span>Yacine BENICHOU</span>
+                            {{ 'home.welcome' | translate }} <span>{{ 'home.fullName' | translate }}</span>
                         </h1>
                         <p>
-                            Je suis un développeur web qui aime créer des applications et des sites web.
+                            {{'home.presentation' | translate }}
                         </p>
                     </div>
                     <app-download-button></app-download-button>

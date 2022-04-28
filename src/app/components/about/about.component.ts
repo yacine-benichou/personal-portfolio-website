@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faBriefcase, faDownload, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { TranslateService } from '@ngx-translate/core';
 import { Framework, PortfolioItem, Timeline } from 'src/app/interfaces/about';
 
 @Component({
@@ -15,8 +16,8 @@ export class AboutComponent implements OnInit {
   public briefcaseIcon: IconDefinition = faBriefcase;
 
   public portfolioItems: PortfolioItem[]  = [
-    {largeText: "10+", smallText: "Projects Completed"},
-    {largeText: "2+", smallText: "Years of Experience"},
+    {largeText: "10+", smallText: "about.small_text_project"},
+    {largeText: "2+", smallText: "about.small_text_experience"},
   ];
 
   public languages: string[] = [
@@ -30,16 +31,16 @@ export class AboutComponent implements OnInit {
 
   public timelines: Timeline[] = [
     {
-      duration: "Juillet 2021 - Janvier 2022", 
-      job: "Développeur Full Stack", 
+      duration: "about.timeline.duration_internship", 
+      job: "about.timeline.job_internship", 
       company: "Société générale", 
-      description: "Développement application interne à l'entreprise avec Angular et Spring java."
+      description: "about.timeline.description_internship"
     },
     {
-      duration: "2020 - present", 
-      job: "Diplôme d'ingénieur en ingénierie et numérique", 
-      company: "EPF École d'ingénieur-e-s", 
-      description: "Actuellement en 4ème année."
+      duration: "about.timeline.duration_school", 
+      job: "about.timeline.degree_school", 
+      company: "about.timeline.name_school", 
+      description: "about.timeline.description_school"
     },
   ];
 
@@ -53,7 +54,5 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
   }
-
 }

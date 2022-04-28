@@ -1,0 +1,77 @@
+{
+    "common": {
+        "download": "Télécharger mon CV",
+        "me": "MOI"
+    },
+    "home": {
+        "welcome": "Bonjour je m'appelle ",
+        "fullName": "Yacine BENICHOU",
+        "presentation": "Je suis un développeur web qui aime créer des applications et des sites web."
+    },
+    "about": {
+        "about_me": "À PROPOS DE ",
+        "information_title": "Quelques informations à mon sujet !",
+        "information_description": {
+            "me": "Je suis un développeur full Stack jeune qui peut apporter du nouveau dans votre ou vos projets. J'ai de l'expérience notamment dans le développement d'interface avec les dernières technologies.",
+            "hobbies": "Je suis passionné par les nouvelles technologies et l'innovation. J'aime également jouer aux jeux vidéos dans mon temps libre mais également voyager pour étendre mes horizons !"
+        },
+        "small_text_project": "Projets complétés" ,
+        "small_text_experience": "Années d'expérience",
+        "skills": "Mes compétences",
+        "programming_language": "Mes langages de programmation",
+        "framework": "Mes frameworks",
+        "timeline": {
+            "title": "Ma Formation",
+            "duration_internship": "Juillet 2021 - Janvier 2022",
+            "job_internship": "Développeur Full Stack",
+            "description_internship": "Conception et développement de nouvelles fonctionnalités et services pour l'outil de gestion de la dépréciation technique et logicielle - optimisation des coûts avec Angular et Spring.",
+            "duration_school": "2020 - Présent",
+            "degree_school": "Diplôme d'ingénieur en ingénierie et numérique",
+            "name_school": "EPF École d'ingénieur-e-s",
+            "description_school": "Actuellement en 4ème année."
+        }
+    },
+    "project": {
+        "me": "MON ",
+        "portfolio": "PORTFOLIO",
+        "header_description": "Voici quelques projets que j'ai réalisé.",
+        "img": {
+            "img_description_1": "Mains tapant sur un clavier",
+            "img_description_2": "Écran de Mac avec lumière rose",
+            "img_description_3": "Double écran avec lumière bleue",
+            "img_description_4": "Ordinateur portable vu de profil",
+            "img_description_5": "Macbook avec IPad vu de profil",
+            "img_description_6": "Bureau de codeur avec grand écran et ordinateur portable sur la droite"
+        },
+        "project_title": {
+            "title_1": "Calculatrice JavaScript (React)",
+            "title_2": "Boîte à Rythme (React)",
+            "title_3": "Minuteur Pomodoro (React)",
+            "title_4": "Visualisation de l'évolution du PIB des États-Unis (D3.js)",
+            "title_5": "Machine de citations aléatoire (HTML/CSS/JS/Bootstrap)",
+            "title_6": "Formulaire client Android (Kotlin)"
+        }
+    },
+    "contact": {
+        "title": "CONTACTEZ ",
+        "contact_me": "CONTACTEZ MOI ICI",
+        "description": "Vous avez besoin que je participe à un de vos projets ? Contactez moi ici en remplissant le formulaire sur la droite. Au plaisir de collaborer avec vous !",
+        "type": {
+            "location": "Lieu",
+            "email": "Email",
+            "education": "Éducation",
+            "language": "Langages"
+        },
+        "data": {
+            "data_location": "Paris, France",
+            "data_email": "yacine.benichou@epfedu.fr",
+            "data_education": "EPF École d'ingénieur-e-s, Cachan",
+            "data_language": "Français, Anglais"
+        },
+        "name_input_placeholder": "VOTRE NOM COMPLET",
+        "email_input_placeholder": "VOTRE EMAIL",
+        "subject_input_placeholder": "ENTREZ VOTRE SUJET",
+        "textarea_placeholder": "Écrivez votre message ici...",
+        "send_button": "Envoyez votre message"
+    }
+}

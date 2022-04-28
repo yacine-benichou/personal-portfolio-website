@@ -1,53 +1,24 @@
 <div class="container">
+    <app-translation-button></app-translation-button>
     <app-theme></app-theme>
-
     <header>
         <div class="main-title">
-            <h2>CONTACTEZ <span>MOI</span></h2>
+            <h2>{{ 'contact.title' | translate }} <span>{{ 'common.me' | translate }}</span></h2>
         </div>
     </header>
     <div class="contact-container">
         <div class="contact-content-con">
             <div class="left-contact">
-                <h4>CONTACTEZ MOI ICI</h4>
-                <p>
-                    Vous avez besoin que je participe à un de vos projets ? Contactez moi ici en remplissant le formulaire sur la droite. Au plaisir de collaborer avec vous !
-                </p>
+                <h4>{{ 'contact.contact_me' | translate }}</h4>
+                <p>{{ 'contact.description' | translate }}</p>
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div *ngFor="let item of contactItemList" class="contact-item">
                         <div class="icon">
-                            <fa-icon [icon] = "locationIcon"></fa-icon>
-                            <span>Lieu</span>
+                            <fa-icon [icon] =  item.icon ></fa-icon>
+                            <span>{{ item.type | translate }}</span>
                         </div>
                         <p>
-                            : Paris, France
-                        </p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <fa-icon [icon] = "envelopeIcon"></fa-icon>
-                            <span>Email</span>
-                        </div>
-                        <p>
-                            <span>: yacine.benichou@epfedu.fr</span>
-                        </p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <fa-icon [icon] = "userGraduateIcon"></fa-icon>
-                            <span>Education</span>
-                        </div>
-                        <p>
-                            <span>: EPF École d'ingénieur-e-s, Cachan</span>
-                        </p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon">
-                            <fa-icon [icon] = "languageIcon"></fa-icon>
-                            <span>Languages</span>
-                        </div>
-                        <p>
-                            <span>: Français, Anglais</span>
+                            : {{ item.data | translate }}
                         </p>
                     </div>
                 </div>
@@ -68,19 +39,19 @@
             <div class="right-contact">
                 <form class="contact-form">
                     <div class="input-control i-c-2">
-                        <input type="text" required placeholder="VOTRE NOM COMPLET">
-                        <input type="email" required placeholder="VOTRE EMAIL">
+                        <input type="text" required placeholder="{{ 'contact.name_input_placeholder' | translate }}">
+                        <input type="email" required placeholder="{{ 'contact.email_input_placeholder' | translate }}">
                     </div>
                     <div class="input-control">
-                        <input type="text" required placeholder="ENTREZ VOTRE SUJET">
+                        <input type="text" required placeholder="{{ 'contact.subject_input_placeholder' | translate }}">
                     </div>
                     <div class="input-control">
-                        <textarea name="" id="" cols="15" rows="8" placeholder="Écrivez votre message ici"></textarea>
+                        <textarea name="" id="" cols="15" rows="8" placeholder="{{ 'contact.textarea_placeholder' | translate}}"></textarea>
                     </div>
                     <div class="button-container">
                         <app-download-button></app-download-button>
                         <button type="submit" class="submit-btn">
-                            <span class="btn-text">Envoyez votre message</span>
+                            <span class="btn-text">{{ 'contact.send_button' | translate }}</span>
                         </button>
                     </div>
                 </form>

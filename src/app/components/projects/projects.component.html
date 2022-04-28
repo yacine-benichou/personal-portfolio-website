@@ -1,19 +1,20 @@
 <div class="container">
+    <app-translation-button></app-translation-button>
     <app-theme></app-theme>
     <header>
         <div class="main-title">
-            <h2>MON <span>PORTFOLIO</span></h2>
+            <h2>{{'project.me' | translate }} <span>{{ 'project.portfolio' | translate }}</span></h2>
         </div>
-        <p class="port-text">Voici quelques projets Front-end que j'ai réalisé.</p>
+        <p class="port-text">{{'project.header_description' | translate }}</p>
     </header>
     <main>
         <div class="portfolios">
             <div *ngFor="let project of projects"  class="portfolio-item">
                 <div class="image">
-                    <img src="{{ project.src }}" alt="{{ project.imgDescription }}">
+                    <img src="{{ project.src }}" alt="{{ project.imgDescription | translate }}">
                 </div>
                 <div class="hover-items">
-                    <h3>{{ project.title }}</h3>
+                    <h3>{{ project.title | translate }}</h3>
                     <div class="icons">
                         <a *ngIf="project.githubLink" href="{{ project.githubLink }}" class="icon" target="_blank">
                             <fa-icon [icon] = "githubIcon"></fa-icon>

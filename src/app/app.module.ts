@@ -14,6 +14,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DownloadButtonComponent } from './components/download-button/download-button.component';
 import { TranslationButtonComponent } from './components/translation-button/translation-button.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -38,9 +41,21 @@ import { TranslationButtonComponent } from './components/translation-button/tran
       {path: "contact_me", component: ContactComponent},
     ], {scrollPositionRestoration: 'enabled'}),
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+  return new TranslateHttpLoader(http);
+}
