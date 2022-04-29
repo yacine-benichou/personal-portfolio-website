@@ -15,4 +15,11 @@ export class DownloadButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public downloadCV(): void {
+    let link = document.createElement("a")
+    link.download = "CV-Yacine-BENICHOU";
+    link.href = "../../../assets/CV-Yacine-BENICHOU.pdf";
+    link.click();
+  }
+
 }

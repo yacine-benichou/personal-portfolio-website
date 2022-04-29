@@ -33,7 +33,7 @@ export class AboutComponent implements OnInit {
     {
       duration: "about.timeline.duration_internship", 
       job: "about.timeline.job_internship", 
-      company: "Société générale", 
+      company: "about.timeline.job_company", 
       description: "about.timeline.description_internship"
     },
     {

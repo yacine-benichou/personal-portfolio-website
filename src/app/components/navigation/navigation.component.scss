@@ -37,3 +37,27 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .nav-container {
+        
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+
+        .nav-list {
+            margin-right: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .control {
+            margin: 0 1rem;
+            margin-top: 1rem;
+        }
+    }
+}

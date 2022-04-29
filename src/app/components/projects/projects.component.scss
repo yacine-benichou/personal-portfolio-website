@@ -86,5 +86,33 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    main {
+
+        .portfolios {
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 6rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:1040px) {
+
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .portfolios{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+
     
     
