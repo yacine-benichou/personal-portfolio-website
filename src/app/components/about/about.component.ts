@@ -45,9 +45,9 @@ export class AboutComponent implements OnInit {
   ];
 
   public frameworks: Framework[] = [
-    {src: "../../../assets/images/angular-logo.png", framework: "Angular"},
-    {src: "../../../assets/images/react-logo.png", framework: "React"},
-    {src: "../../../assets/images/spring-logo.png", framework: "Spring"},
+    {src: "assets/images/angular-logo.png", framework: "Angular"},
+    {src: "assets/images/react-logo.png", framework: "React"},
+    {src: "assets/images/spring-logo.png", framework: "Spring"},
   ];
 
 
