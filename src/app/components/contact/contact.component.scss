@@ -9,6 +9,7 @@
 .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
+
     .left-contact {
         flex: 2;
 
@@ -84,6 +85,8 @@
         }
     }
 
+    /* Form */
+
     .right-contact {
         flex: 3;
         margin-left: 3rem;
@@ -145,7 +148,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  // ajuste la page quand la longueur de l'écran est inférieure à 600 px
 
     .contact-content-con {
         flex-direction: column;
@@ -206,7 +209,7 @@
 
 }
 
-@media screen and (max-width:1432px) {
+@media screen and (max-width:1432px) {  // ajuste la page quand la longueur de l'écran est supérieure à 600 px et inférieure à 1432 px
 
     .contact-content-con {
         flex-direction: column;

@@ -10,16 +10,13 @@ export class ThemeService {
 
   constructor() { }
 
-  /* Les méthodes n'utilisent pas d'Observables car elles ne font pas appel à un serveur.
-    Ainsi, elles n'ont pas besoin d'être asynchrones. */
-
-  getThemeState(): boolean {
+  getThemeState(): boolean {  // retourne isDarkThemeOn
     return this.isDarkThemeOn;
   }
 
-  changeTheme(): boolean {
-    this.isDarkThemeOn = !this.isDarkThemeOn;
-    document.body.classList.toggle('light-mode');
-    return this.getThemeState();
+  changeTheme(): boolean { 
+    this.isDarkThemeOn = !this.isDarkThemeOn; // change la valeur de isDarkThemeOn par son contraire
+    document.body.classList.toggle('light-mode'); // active le thème blanc sur toute l'application
+    return this.isDarkThemeOn;
   }
 }

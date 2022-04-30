@@ -20,6 +20,7 @@
             </div>
             
             <div class="right-about">
+                <!-- répète le div et son contenu pour chaque valeur de la liste portfolioItems dans le fichier .ts  -->
                 <div *ngFor="let item of portfolioItems" class="about-item">
                     <div class="abt-text">
                         <p class="large-text">{{ item.largeText }}</p>
@@ -33,6 +34,7 @@
             <h3 class="skills-title">{{ 'about.skills' | translate }}</h3>
             <h5 class="languages-title">{{ 'about.programming_language' | translate }}</h5>
             <div class="skills-languages">
+                <!-- répète le div et son contenu pour chaque valeur de la liste languages dans le fichier .ts  -->
                 <div *ngFor="let language of languages" class="language">
                     <p class="language-title">{{ language }}</p>
                 </div>
@@ -40,6 +42,7 @@
 
             <h5 class="frameworks-title">{{ 'about.framework' | translate }}</h5>
             <div class="skills-frameworks">
+                <!-- répète le div et son contenu pour chaque valeur de la liste frameworks dans le fichier .ts  -->
                 <div *ngFor="let framework of frameworks" class="framework">
                     <img src="{{ framework.src }}" alt="{{ framework.framework }}" />
                     <p class="framework-title">{{ framework.framework }}</p>
@@ -49,6 +52,7 @@
 
         <h3 class="timelines-title">{{ 'about.timeline.title' | translate }}</h3>
         <div class="about-timeline">
+            <!-- répète le div et son contenu pour chaque valeur de la liste timelines dans le fichier .ts  -->
             <div *ngFor="let timelineItem of timelines" class="timeline-item">
                 <div class="tl-icon">
                     <fa-icon [icon]="briefcaseIcon"></fa-icon>

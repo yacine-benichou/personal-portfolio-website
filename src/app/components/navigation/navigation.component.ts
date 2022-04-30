@@ -8,6 +8,7 @@ import { faHome, faUser, faBriefcase, faEnvelope, IconDefinition } from '@fortaw
 })
 export class NavigationComponent implements OnInit {
 
+  // définition des icones utilisées 
   public homeIcon: IconDefinition = faHome;
   public userIcon: IconDefinition = faUser;
   public briefcaseIcon: IconDefinition = faBriefcase;

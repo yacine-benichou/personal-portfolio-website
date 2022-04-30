@@ -14,6 +14,7 @@ header {
     }
 }
 
+/* main content */
 main {
 
     .portfolios {
@@ -87,7 +88,7 @@ main {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {  // ajuste la page quand la longueur de l'écran est inférieure à 600 px
 
     main {
 
@@ -99,17 +100,17 @@ main {
     }
 }
 
-@media screen and (max-width:1040px) {
-
-    .portfolios {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-@media screen and (max-width:660px) {
+@media screen and (max-width:660px) {   // ajuste la page quand la longueur de l'écran est supérieure à 600 px et inférieure à 660 px
 
     .portfolios{
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media screen and (max-width:1040px) {  // ajuste la page quand la longueur de l'écran est supérieure à 660 px et inférieure à 1040 px
+
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 

@@ -10,14 +10,16 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class ThemeComponent implements OnInit {
 
-  public isDarkThemeOn: boolean | undefined;
+  public isDarkThemeOn: boolean | undefined; // la variable est un boolean et dans le cas contraire undefined
+
+  // définition de l'icone utilisée
   public themeIcon: IconDefinition = faMoon;
   
   constructor(private themeService: ThemeService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.isDarkThemeOn = this.themeService.getThemeState();
-    this.themeIcon = this.isDarkThemeOn ? faMoon : faSun;
+    this.themeIcon = this.isDarkThemeOn ? faMoon : faSun; 
   }
 
   changeTheme(): void {

@@ -8,8 +8,6 @@ import { faDownload, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
 
-  public downloadIcon: IconDefinition = faDownload;
-
   constructor() { }
 
   ngOnInit(): void {

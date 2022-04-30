@@ -10,9 +10,11 @@ import { Project } from 'src/app/interfaces/project';
 })
 export class ProjectsComponent implements OnInit {
 
+  // définition des icones utilisées 
   public githubIcon: IconDefinition = faGithub;
   public codePenIcon: IconDefinition = faCodepen;
 
+  // tableau où chaque élément suit l'interface Project
   public projects: Project[] = [
     {
       src: "assets/images/port1.jpg",

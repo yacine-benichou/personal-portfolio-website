@@ -1,3 +1,4 @@
+/* titre */
 .main-title {
     text-align: center;
     font-weight: 600;
@@ -7,12 +8,14 @@
     }
 }
 
+/* container principal */
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 4rem;
 
+    /* right-about */
     .right-about {
         display: flex;
         flex-direction: column;
@@ -66,6 +69,7 @@
         }
     }
 
+    /* left-about */
     .left-about {
         text-align: center;
         padding-right: 3rem;
@@ -89,6 +93,7 @@
     }
 }
 
+/* Compétences */
 .about-skills {
     padding-bottom: 4rem;
     display: flex;
@@ -144,6 +149,8 @@
         }
     }
 }
+
+/* Formation / timeline */
 
 .timelines-title {
     margin: 2rem auto;
@@ -205,7 +212,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { // ajuste la page quand la longueur de l'écran est inférieure à 600 px
 
     .main-title {
         h2 {
@@ -284,23 +291,7 @@
     }
 }
 
-@media screen and (max-width:970px) {
-
-    .about-container .left-about{
-        padding-right: 0rem;
-        margin: 0 auto;
-    }
-
-    .about-skills {
-
-        .skills-frameworks {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:700px) { // ajuste la page quand la longueur de l'écran est supérieure à 600 px et inférieure à 700 px
 
     .container {
         padding: 7rem 3rem;
@@ -321,3 +312,20 @@
         }
     }
 }
+
+@media screen and (max-width:970px) {
+
+    .about-container .left-about{
+        padding-right: 0rem;
+        margin: 0 auto;
+    }
+
+    .about-skills {
+
+        .skills-frameworks {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+

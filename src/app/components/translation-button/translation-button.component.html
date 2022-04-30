@@ -1,4 +1,5 @@
 <div class="btn-language-container">
+    <!-- si le langage est français le bouton FR a la classe active. Sinon, le bouton EN l'obtient -->
     <button type="button" (click)="setLanguageToFrench()" class="fr-btn" [ngClass]="{active: isLanguageFrench}">FR</button>
     <button type="button" (click)="setLanguageToEnglish()" class="en-btn" [ngClass]="{active: !isLanguageFrench}">EN</button>
 </div>

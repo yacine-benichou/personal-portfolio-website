@@ -16,6 +16,7 @@ interface ContactItem {
 })
 export class ContactComponent implements OnInit {
   
+  // définition des icones utilisées 
   public downloadIcon: IconDefinition = faDownload;
   public locationIcon: IconDefinition = faMapMarkerAlt;
   public envelopeIcon: IconDefinition = faEnvelope;
@@ -25,6 +26,7 @@ export class ContactComponent implements OnInit {
   public codePenIcon: IconDefinition = faCodepen;
   public linkedinIcon: IconDefinition = faLinkedin;
 
+  // tableau où chaque élément suit l'interface ContactItem
   public contactItemList: ContactItem[] = [
     {
       icon: this.locationIcon,

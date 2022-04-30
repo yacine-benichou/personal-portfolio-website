@@ -9,13 +9,15 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 })
 export class DownloadButtonComponent implements OnInit {
 
-  public downloadIcon: IconDefinition = faDownload;
+  // définition des icones utilisées 
+  public downloadIcon: IconDefinition = faDownload; 
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public downloadCV(): void {
+  public downloadCV(): void { // permet de télécharger le CV en clickant sur le bouton
     let link = document.createElement("a")
     link.download = "CV-Yacine-BENICHOU";
     link.href = "../../../assets/CV-Yacine-BENICHOU.pdf";

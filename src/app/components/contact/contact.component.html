@@ -12,6 +12,7 @@
                 <h4>{{ 'contact.contact_me' | translate }}</h4>
                 <p>{{ 'contact.description' | translate }}</p>
                 <div class="contact-info">
+                    <!-- répète le div et son contenu pour chaque valeur de la liste contactItemList dans le fichier .ts  -->
                     <div *ngFor="let item of contactItemList" class="contact-item">
                         <div class="icon">
                             <fa-icon [icon] =  item.icon ></fa-icon>

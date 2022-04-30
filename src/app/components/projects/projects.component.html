@@ -9,6 +9,7 @@
     </header>
     <main>
         <div class="portfolios">
+            <!-- répète le div et son contenu pour chaque valeur de la liste projects dans le fichier .ts  -->
             <div *ngFor="let project of projects"  class="portfolio-item">
                 <div class="image">
                     <img src="{{ project.src }}" alt="{{ project.imgDescription | translate }}">
@@ -16,9 +17,11 @@
                 <div class="hover-items">
                     <h3>{{ project.title | translate }}</h3>
                     <div class="icons">
+                        <!-- s'affiche si la clé githubLink n'est pas nulle -->
                         <a *ngIf="project.githubLink" href="{{ project.githubLink }}" class="icon" target="_blank">
                             <fa-icon [icon] = "githubIcon"></fa-icon>
                         </a>
+                        <!-- s'affiche si la clé codePenLink n'est pas nulle -->
                         <a *ngIf="project.codePenLink" href="{{ project.codePenLink }}" class="icon" target="_blank">
                             <fa-icon [icon] = "codePenIcon"></fa-icon>
                         </a>
