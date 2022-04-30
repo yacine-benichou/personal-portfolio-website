@@ -9,7 +9,9 @@
 
 # firebase
 **/.firebaserc
+/.firebase
 **/node_modules/*
+/.github
 
 # cache
 /.angular/cache 
