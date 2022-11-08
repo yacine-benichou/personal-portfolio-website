@@ -10,13 +10,13 @@ export class ThemeService {
 
   constructor() { }
 
-  getThemeState(): boolean {  // retourne isDarkThemeOn
+  getThemeState(): boolean {
     return this.isDarkThemeOn;
   }
 
   changeTheme(): boolean { 
-    this.isDarkThemeOn = !this.isDarkThemeOn; // change la valeur de isDarkThemeOn par son contraire
-    document.body.classList.toggle('light-mode'); // active le thème blanc sur toute l'application
+    this.isDarkThemeOn = !this.isDarkThemeOn;
+    document.body.classList.toggle('light-mode'); // toggle light-theme in the whole app
     return this.isDarkThemeOn;
   }
 }

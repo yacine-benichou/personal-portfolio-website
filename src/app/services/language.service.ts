@@ -5,20 +5,20 @@ import { Injectable } from '@angular/core';
 })
 export class LanguageService {
 
-  public isLanguageFrench: boolean = true; // par défaut le langage est français
+  public isLanguageFrench: boolean = false; // english language by default
   constructor() { }
 
 
-  public getLanguage(): boolean { // retourne isLanguageFrench
+  public getLanguage(): boolean {
     return this.isLanguageFrench;
   }
 
-  public setLanguageToFrench(): boolean { // rend le langage français et retourne isLanguageFrench
+  public setLanguageToFrench(): boolean {
     this.isLanguageFrench = true;
     return this.isLanguageFrench;
   }
 
-  public setLanguageToEnglish(): boolean {  // rend le langage anglais et retourne isLanguageFrench
+  public setLanguageToEnglish(): boolean {
     this.isLanguageFrench = false;
     return this.isLanguageFrench;
   }

@@ -67,7 +67,7 @@ main {
 
 
 
-@media screen and (max-width: 600px) {    // ajuste la page quand la longueur de l'écran est inférieure à 600 px
+@media screen and (max-width: 600px) {
 
     header {
         padding: 0 !important;
@@ -105,7 +105,7 @@ main {
     }
 }
 
-@media screen and (max-width: 970px) { // ajuste la page quand la longueur de l'écran est supérieure à 600 px et inférieur à 970 px
+@media screen and (max-width: 970px) {
     
     .container {
         padding: 7rem 6rem;
@@ -137,14 +137,14 @@ main {
     }
 }
 
-@media screen and (max-width:1250px) { // ajuste la page quand la longueur de l'écran est supérieure à 970 px et inférieur à 1250 px
+@media screen and (max-width:1250px) {
 
     .main-content .right-content {
         padding-right: 9rem;
     }
 }
 
-@media screen and (max-width:1432px) { // ajuste la page quand la longueur de l'écran est supérieure à 1250 px et inférieur à 1432 px
+@media screen and (max-width:1432px) {
 
     .container {
         padding: 7rem 11rem;

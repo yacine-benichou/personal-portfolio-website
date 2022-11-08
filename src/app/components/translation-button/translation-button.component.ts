@@ -9,22 +9,23 @@ import { LanguageService } from 'src/app/services/language.service';
 })
 export class TranslationButtonComponent implements OnInit {
 
-  public isLanguageFrench: boolean = true;
+  public isLanguageFrench!: boolean;
 
   constructor(private translateService: TranslateService, private languageService: LanguageService) { }
 
   ngOnInit(): void {
-    this.isLanguageFrench = this.languageService.getLanguage(); // affecte à isLanguageFrench la valeur retournée par getLanguage()
+    this.isLanguageFrench = this.languageService.getLanguage();
+    console.log(this.isLanguageFrench);
   }
 
   public setLanguageToFrench(): void {  
     this.isLanguageFrench = this.languageService.setLanguageToFrench();
-    this.translateService.use("fr");  // fait en sorte que le service lit le fichier fr.json
+    this.translateService.use("fr");  // service read the file fr.json
   }
 
   public setLanguageToEnglish(): void {
     this.isLanguageFrench = this.languageService.setLanguageToEnglish();
-    this.translateService.use("en"); // fait en sorte que le service lit le fichier en.json
+    this.translateService.use("en"); // service read the file en.json
   }
 
 }

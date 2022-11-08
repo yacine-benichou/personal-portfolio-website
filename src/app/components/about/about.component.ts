@@ -12,11 +12,9 @@ import { Framework, PortfolioItem, Timeline } from 'src/app/interfaces/about';
 
 export class AboutComponent implements OnInit {
 
-  // définition des icones utilisées 
   public downloadIcon: IconDefinition = faDownload;
   public briefcaseIcon: IconDefinition = faBriefcase;
 
-  // cette variable est un tableau où chaque élément de celui-ci suit l'interface PortfolioItem
   public portfolioItems: PortfolioItem[]  = [
     {largeText: "10+", smallText: "about.small_text_project"},
     {largeText: "2+", smallText: "about.small_text_experience"},
@@ -31,7 +29,6 @@ export class AboutComponent implements OnInit {
     "Kotlin"
   ];
 
-  // idem mais chaque élément suit l'interface Timeline
   public timelines: Timeline[] = [
     {
       duration: "about.timeline.duration_internship", 
@@ -47,7 +44,6 @@ export class AboutComponent implements OnInit {
     },
   ];
 
-  // idem mais chaque élément suit l'interface Framework
   public frameworks: Framework[] = [
     {src: "assets/images/angular-logo.png", framework: "Angular"},
     {src: "assets/images/react-logo.png", framework: "React"},

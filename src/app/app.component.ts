@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'portfolio-website';
 
   constructor(private translateService: TranslateService) {
-    translateService.setDefaultLang("fr");
-    translateService.use("fr");
+    translateService.setDefaultLang("en");
+    translateService.use("en");
   }
 }

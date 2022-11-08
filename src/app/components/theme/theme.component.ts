@@ -10,9 +10,8 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class ThemeComponent implements OnInit {
 
-  public isDarkThemeOn: boolean | undefined; // la variable est un boolean et dans le cas contraire undefined
+  public isDarkThemeOn!: boolean;
 
-  // définition de l'icone utilisée
   public themeIcon: IconDefinition = faMoon;
   
   constructor(private themeService: ThemeService) { }

@@ -148,7 +148,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {  // ajuste la page quand la longueur de l'écran est inférieure à 600 px
+@media screen and (max-width: 600px) { 
 
     .contact-content-con {
         flex-direction: column;
@@ -209,7 +209,7 @@
 
 }
 
-@media screen and (max-width:1432px) {  // ajuste la page quand la longueur de l'écran est supérieure à 600 px et inférieure à 1432 px
+@media screen and (max-width:1432px) { 
 
     .contact-content-con {
         flex-direction: column;
